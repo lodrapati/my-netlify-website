@@ -1,0 +1,52 @@
+# Netlify Build Configuration
+# This file configures how Netlify builds and deploys your website
+
+# Build settings
+[build]
+  # Directory to deploy (the root of your site)
+  publish = "."
+  
+  # Build command (optional - remove if you don't need a build process)
+  # command = "npm run build"
+
+# Redirect rules
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers configuration
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Cache headers for static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Environment variables (uncomment and add your own as needed)
+# [context.production]
+#   environment = { REACT_APP_API_URL = "https://api.example.com" }
+
+# [context.deploy-preview]
+#   environment = { REACT_APP_API_URL = "https://staging-api.example.com" }
+
+# [context.branch-deploy]
+#   environment = { REACT_APP_API_URL = "https://dev-api.example.com" }
