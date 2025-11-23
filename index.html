@@ -1,86 +1,174 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Website Netlify</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog - Website Netlify</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <h1 class="logo">My Portfolio</h1>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">ArshipViral Blog</div>
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">Trending</a></li>
+        <li><a href="#" class="nav-link">Categories</a></li>
+        <li><a href="#" class="nav-link">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Welcome to My Blog</h1>
+        <p>Explore stories, insights, and ideas about tech, design, and creativity</p>
+        <input type="text" class="search-box" placeholder="Search articles...">
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- Featured Article -->
+      <section class="featured-article">
+        <article class="article-card featured">
+          <div class="article-image">
+            <img src="https://via.placeholder.com/800x400" alt="Featured Article">
+          </div>
+          <div class="article-content">
+            <span class="article-category">Featured</span>
+            <h2>Understanding Modern Web Development</h2>
+            <p>Discover the latest trends and best practices in web development. Learn how to build scalable, maintainable applications with modern tools and frameworks.</p>
+            <div class="article-meta">
+              <span class="author">By Lodrapati</span>
+              <span class="date">November 23, 2025</span>
+              <span class="reading-time">5 min read</span>
             </div>
-        </nav>
-    </header>
+          </div>
+        </article>
+      </section>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container">
-                <h2>Welcome to My Portfolio</h2>
-                <p>Web Developer | Content Creator | Tech Enthusiast</p>
-                <a href="#projects" class="btn">View My Projects</a>
+      <!-- Articles Grid -->
+      <section class="articles-section">
+        <div class="section-header">
+          <h2>Latest Articles</h2>
+        </div>
+        
+        <div class="articles-grid">
+          <!-- Article Card 1 -->
+          <article class="article-card">
+            <div class="article-image">
+              <img src="https://via.placeholder.com/400x250" alt="Article 1">
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I'm a passionate web developer and content creator based in Indonesia. I love building modern, responsive websites and sharing knowledge about web technologies.</p>
+            <div class="article-content">
+              <span class="article-category">Web Development</span>
+              <h3>Getting Started with React</h3>
+              <p>A comprehensive guide to React fundamentals and how to start building interactive user interfaces.</p>
+              <div class="article-meta">
+                <span class="author">Lodrapati</span>
+                <span class="reading-time">4 min read</span>
+              </div>
             </div>
-        </section>
+          </article>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2>My Projects</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <h3>Project 1</h3>
-                        <p>Description of your first project</p>
-                        <a href="#" class="btn-secondary">Learn More</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Project 2</h3>
-                        <p>Description of your second project</p>
-                        <a href="#" class="btn-secondary">Learn More</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Project 3</h3>
-                        <p>Description of your third project</p>
-                        <a href="#" class="btn-secondary">Learn More</a>
-                    </div>
-                </div>
+          <!-- Article Card 2 -->
+          <article class="article-card">
+            <div class="article-image">
+              <img src="https://via.placeholder.com/400x250" alt="Article 2">
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Get In Touch</h2>
-                <p>Feel free to reach out to me through social media or email</p>
-                <div class="contact-links">
-                    <a href="#" class="social-link">Twitter</a>
-                    <a href="#" class="social-link">GitHub</a>
-                    <a href="#" class="social-link">LinkedIn</a>
-                </div>
+            <div class="article-content">
+              <span class="article-category">Design</span>
+              <h3>UI/UX Design Best Practices</h3>
+              <p>Essential principles and practices for creating beautiful and user-friendly digital experiences.</p>
+              <div class="article-meta">
+                <span class="author">Lodrapati</span>
+                <span class="reading-time">6 min read</span>
+              </div>
             </div>
-        </section>
-    </main>
+          </article>
 
-    <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-    </footer>
+          <!-- Article Card 3 -->
+          <article class="article-card">
+            <div class="article-image">
+              <img src="https://via.placeholder.com/400x250" alt="Article 3">
+            </div>
+            <div class="article-content">
+              <span class="article-category">Technology</span>
+              <h3>The Future of Web Technologies</h3>
+              <p>Exploring emerging technologies and what they mean for the future of web development.</p>
+              <div class="article-meta">
+                <span class="author">Lodrapati</span>
+                <span class="reading-time">5 min read</span>
+              </div>
+            </div>
+          </article>
 
-    <script src="script.js"></script>
+          <!-- Article Card 4 -->
+          <article class="article-card">
+            <div class="article-image">
+              <img src="https://via.placeholder.com/400x250" alt="Article 4">
+            </div>
+            <div class="article-content">
+              <span class="article-category">Productivity</span>
+              <h3>Tools That Boost Developer Productivity</h3>
+              <p>Discover essential tools and extensions that can significantly improve your development workflow.</p>
+              <div class="article-meta">
+                <span class="author">Lodrapati</span>
+                <span class="reading-time">4 min read</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="newsletter-section">
+        <div class="newsletter-content">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Get the latest articles delivered to your inbox every week</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About</h3>
+          <p>ArshipViral Blog adalah platform untuk berbagi pengetahuan tentang teknologi, desain, dan kreativitas digital.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Technology</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ArshipViral Blog. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
