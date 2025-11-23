@@ -3,170 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Blog - Website Netlify</title>
+  <title>Median UI - ArshipViral Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-brand">ArshipViral Blog</div>
-      <ul class="nav-menu">
-        <li><a href="#" class="nav-link">Home</a></li>
-        <li><a href="#" class="nav-link">Trending</a></li>
-        <li><a href="#" class="nav-link">Categories</a></li>
-        <li><a href="#" class="nav-link">About</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="container-main">
+    <!-- Left Sidebar Navigation -->
+    <aside class="sidebar-left">
+      <nav class="sidebar-nav">
+        <div class="nav-item" title="Home"><i class="fas fa-home"></i></div>
+        <div class="nav-item" title="Library"><i class="fas fa-folder"></i></div>
+        <div class="nav-item" title="Collections"><i class="fas fa-bookmark"></i></div>
+        <div class="nav-item" title="Following"><i class="fas fa-users"></i></div>
+        <div class="nav-item" title="Notifications"><i class="fas fa-bell"></i></div>
+        <div class="nav-item" title="Reading List"><i class="fas fa-list"></i></div>
+        <div class="nav-item" title="Highlights"><i class="fas fa-star"></i></div>
+        <div class="nav-item" title="History"><i class="fas fa-history"></i></div>
+        <div class="nav-item" title="Drafts"><i class="fas fa-file-alt"></i></div>
+      </nav>
+    </aside>
 
-  <!-- Main Content -->
-  <main class="main-container">
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="hero-content">
-        <h1>Welcome to My Blog</h1>
-        <p>Explore stories, insights, and ideas about tech, design, and creativity</p>
-        <input type="text" class="search-box" placeholder="Search articles...">
-      </div>
-    </section>
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Header with Search -->
+      <header class="header-top">
+        <div class="header-brand">Median UI</div>
+        <div class="search-wrapper">
+          <i class="fas fa-search"></i>
+          <input type="text" class="search-input" placeholder="e.g. Typography">
+        </div>
+        <div class="header-icons">
+          <button class="icon-btn"><i class="fas fa-text-height"></i></button>
+          <button class="icon-btn"><i class="fas fa-bookmark"></i></button>
+        </div>
+      </header>
 
-    <div class="container">
-      <!-- Featured Article -->
-      <section class="featured-article">
-        <article class="article-card featured">
-          <div class="article-image">
-            <img src="https://via.placeholder.com/800x400" alt="Featured Article">
+      <!-- Featured Slider Section -->
+      <section class="slider-section">
+        <div class="slider-item">Slider 3</div>
+      </section>
+
+      <!-- Pinned Post -->
+      <section class="pinned-section">
+        <h3>Pinned Post</h3>
+        <div class="pinned-post">
+          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop" alt="Featured Post">
+          <div class="post-overlay">
+            <button class="post-btn"><i class="fas fa-heart"></i></button>
+            <button class="post-btn"><i class="fas fa-bookmark"></i></button>
           </div>
-          <div class="article-content">
-            <span class="article-category">Featured</span>
-            <h2>Understanding Modern Web Development</h2>
-            <p>Discover the latest trends and best practices in web development. Learn how to build scalable, maintainable applications with modern tools and frameworks.</p>
-            <div class="article-meta">
-              <span class="author">By Lodrapati</span>
-              <span class="date">November 23, 2025</span>
-              <span class="reading-time">5 min read</span>
-            </div>
+          <div class="post-content">
+            <span class="post-category">Decor</span>
+            <h4>The 6 Worst Interior Design Jobs In History</h4>
+            <p>How hollywood got apartment guides all wrong. The complete beginner's guide to interior design ideas. 17 ways living room decors could le...</p>
+            <p class="post-date">2 years ago</p>
           </div>
-        </article>
+        </div>
       </section>
 
-      <!-- Articles Grid -->
-      <section class="articles-section">
-        <div class="section-header">
-          <h2>Latest Articles</h2>
-        </div>
-        
-        <div class="articles-grid">
-          <!-- Article Card 1 -->
-          <article class="article-card">
-            <div class="article-image">
-              <img src="https://via.placeholder.com/400x250" alt="Article 1">
+      <!-- Ads Placeholder -->
+      <div class="ads-placeholder">Ads go here</div>
+
+      <!-- All Stories Section -->
+      <section class="stories-section">
+        <h3>All stories</h3>
+        <div class="stories-grid">
+          <!-- Story Card 1 -->
+          <article class="story-card">
+            <div class="card-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop" alt="Median UI Template">
+              <span class="discount-badge">-10%</span>
+              <button class="card-btn"><i class="fas fa-heart"></i></button>
+              <button class="card-btn"><i class="fas fa-bookmark"></i></button>
             </div>
-            <div class="article-content">
-              <span class="article-category">Web Development</span>
-              <h3>Getting Started with React</h3>
-              <p>A comprehensive guide to React fundamentals and how to start building interactive user interfaces.</p>
-              <div class="article-meta">
-                <span class="author">Lodrapati</span>
-                <span class="reading-time">4 min read</span>
+            <div class="card-body">
+              <span class="card-category">Product</span>
+              <h4>Median UI - Blogger Template (Sample Post Product)</h4>
+              <div class="card-price">
+                <span class="original-price">Rp 150.000</span>
+                <span class="sale-price">Rp 130.000</span>
               </div>
             </div>
           </article>
 
-          <!-- Article Card 2 -->
-          <article class="article-card">
-            <div class="article-image">
-              <img src="https://via.placeholder.com/400x250" alt="Article 2">
+          <!-- Story Card 2 -->
+          <article class="story-card">
+            <div class="card-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1585518419759-87f282ba8b1e?w=400&h=300&fit=crop" alt="Weight Loss Success">
+              <button class="card-btn"><i class="fas fa-heart"></i></button>
+              <button class="card-btn"><i class="fas fa-bookmark"></i></button>
             </div>
-            <div class="article-content">
-              <span class="article-category">Design</span>
-              <h3>UI/UX Design Best Practices</h3>
-              <p>Essential principles and practices for creating beautiful and user-friendly digital experiences.</p>
-              <div class="article-meta">
-                <span class="author">Lodrapati</span>
-                <span class="reading-time">6 min read</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Article Card 3 -->
-          <article class="article-card">
-            <div class="article-image">
-              <img src="https://via.placeholder.com/400x250" alt="Article 3">
-            </div>
-            <div class="article-content">
-              <span class="article-category">Technology</span>
-              <h3>The Future of Web Technologies</h3>
-              <p>Exploring emerging technologies and what they mean for the future of web development.</p>
-              <div class="article-meta">
-                <span class="author">Lodrapati</span>
-                <span class="reading-time">5 min read</span>
-              </div>
+            <div class="card-body">
+              <span class="card-category">Fitness</span>
+              <h4>14 Things Your Boss Expects You Know About Weight Loss Success Stories</h4>
+              <p>What experts are saying about weight loss meal plans. 5 things your boss expects you know about travel vaccines. Will online nutrition courses ever rule the world? 5 facts about weight loss meal plans every kid should know.</p>
+              <p class="post-date">3 years ago</p>
             </div>
           </article>
 
-          <!-- Article Card 4 -->
-          <article class="article-card">
-            <div class="article-image">
-              <img src="https://via.placeholder.com/400x250" alt="Article 4">
+          <!-- Story Card 3 -->
+          <article class="story-card">
+            <div class="card-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1519958089073-b8675bc20765?w=400&h=300&fit=crop" alt="Fashion Tips">
+              <button class="card-btn"><i class="fas fa-heart"></i></button>
+              <button class="card-btn"><i class="fas fa-bookmark"></i></button>
             </div>
-            <div class="article-content">
-              <span class="article-category">Productivity</span>
-              <h3>Tools That Boost Developer Productivity</h3>
-              <p>Discover essential tools and extensions that can significantly improve your development workflow.</p>
-              <div class="article-meta">
-                <span class="author">Lodrapati</span>
-                <span class="reading-time">4 min read</span>
-              </div>
+            <div class="card-body">
+              <span class="card-category">Fashion</span>
+              <h4>What Wikipedia Can't Tell You About Salon Services</h4>
+              <p>The 5 worst plus size dresses in history. 18 ideas you can steal from makeup artists. 11 things your boss expects you know about makeup. Why your mom loves fashion magazines.</p>
+              <p class="post-date">3 years ago</p>
             </div>
           </article>
         </div>
       </section>
 
-      <!-- Newsletter Section -->
-      <section class="newsletter-section">
-        <div class="newsletter-content">
-          <h2>Subscribe to Our Newsletter</h2>
-          <p>Get the latest articles delivered to your inbox every week</p>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit" class="subscribe-btn">Subscribe</button>
-          </form>
+      <!-- Ads Placeholder -->
+      <div class="ads-placeholder">Ads go here</div>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="sidebar-right">
+      <!-- Popular Posts -->
+      <section class="popular-section">
+        <h3>Popular Posts</h3>
+        <div class="popular-list">
+          <article class="popular-item">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=100&h=80&fit=crop" alt="Interior Design">
+            <div class="popular-content">
+              <span class="popular-number">01</span>
+              <span class="popular-date">Oct 25</span>
+              <span class="popular-category">Decor</span>
+              <h4>The 6 Worst Interior Design Jobs In History</h4>
+              <p>How hollywood got apartment guides all wrong. The complete beginner's guide...</p>
+            </div>
+          </article>
+
+          <article class="popular-item">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=100&h=80&fit=crop" alt="Blogger Template">
+            <div class="popular-content">
+              <span class="popular-number">02</span>
+              <span class="popular-date">Mar 16</span>
+              <span class="popular-category">Product</span>
+              <h4>Median UI - Blogger Template (Sample Post Product)</h4>
+            </div>
+          </article>
+
+          <article class="popular-item">
+            <img src="https://images.unsplash.com/photo-1585518419759-87f282ba8b1e?w=100&h=80&fit=crop" alt="Weight Loss">
+            <div class="popular-content">
+              <span class="popular-number">03</span>
+              <span class="popular-date">Mar 16</span>
+              <span class="popular-category">Fitness</span>
+              <h4>14 Things Your Boss Expects You Know About Weight Loss Success Stories</h4>
+            </div>
+          </article>
+
+          <article class="popular-item">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=100&h=80&fit=crop" alt="Flights">
+            <div class="popular-content">
+              <span class="popular-number">04</span>
+              <span class="popular-date">Mar 13</span>
+              <span class="popular-category">Flights</span>
+              <h4>Why Flight Scanners Are Killing You</h4>
+            </div>
+          </article>
+
+          <article class="popular-item">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=100&h=80&fit=crop" alt="Honeymoon Packages">
+            <div class="popular-content">
+              <span class="popular-number">05</span>
+              <span class="popular-date">Mar 13</span>
+              <span class="popular-category">Activities</span>
+              <h4>An Expert Interview About Honeymoon Packages</h4>
+            </div>
+          </article>
         </div>
       </section>
-    </div>
-  </main>
+
+      <!-- Labels Section -->
+      <section class="labels-section">
+        <h3>Labels</h3>
+        <div class="labels-grid">
+          <span class="label-tag">Accessory <span class="count">1</span></span>
+          <span class="label-tag">Activities <span class="count">1</span></span>
+          <span class="label-tag">Adventure <span class="count">1</span></span>
+          <span class="label-tag">Analysis <span class="count">1</span></span>
+          <span class="label-tag">Country <span class="count">1</span></span>
+          <span class="label-tag">Cruises <span class="count">1</span></span>
+          <span class="label-tag">Decor <span class="count">1</span></span>
+          <span class="label-tag">Design <span class="count">1</span></span>
+        </div>
+        <a href="#" class="show-all">Show all (+25)</a>
+      </section>
+
+      <!-- Ads Placeholder -->
+      <div class="ads-placeholder">Ads go here</div>
+    </aside>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>About</h3>
-          <p>ArshipViral Blog adalah platform untuk berbagi pengetahuan tentang teknologi, desain, dan kreativitas digital.</p>
-        </div>
-        <div class="footer-section">
-          <h3>Categories</h3>
-          <ul>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Design</a></li>
-            <li><a href="#">Technology</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Follow Us</h3>
-          <div class="social-links">
-            <a href="#" class="social-link">Twitter</a>
-            <a href="#" class="social-link">GitHub</a>
-            <a href="#" class="social-link">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 ArshipViral Blog. All rights reserved.</p>
-      </div>
-    </div>
+    <a href="#">Term</a>
+    <a href="#">Disclaimer</a>
+    <a href="#">Privacy</a>
+    <a href="#">Faq</a>
   </footer>
 
   <script src="script.js"></script>
